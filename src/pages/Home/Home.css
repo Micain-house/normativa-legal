@@ -1,0 +1,185 @@
+.home{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+.home-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    max-width:1600px;
+}
+.home-container h1 {
+    display: flex;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: center;
+    flex-direction: column;
+}
+.home-container p{
+width: 50%;
+font-size:18px;
+line-height:28px;
+padding:8px 0px 0px;
+text-align:left;
+margin-right: 2rem;
+}
+.form-home{
+    max-width: 1060px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.wailist-input{
+    width: 50%;
+    border-radius: 32px;
+    border: 1px solid #186862;
+    padding: 12px 24px;
+}
+
+
+.card-home{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 4rem;
+    align-items: flex-start;
+}
+
+.card-home img{
+    width: 60%;
+}
+.card-home-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+section{
+    width: 100%;
+    margin-top: 4rem;
+}
+.preguntas-frecuentes{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 16px;
+}
+.preguntas-frecuentes h4{
+    width: 80%;
+    text-align: left;
+}
+.accordion{
+    border:  #186862;;
+    width: 100%;
+}
+.accordion-item{
+    background-color: #242424;
+    border-bottom: 1px solid rgb(229 229 229 / 18%);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.accordion-button{
+    color: rgba(62, 207, 152, 1);
+    font-weight: 500;
+    background-color: transparent;
+}
+.accordion-button:not(.collapsed) {
+    outline: none;
+    color: rgba(62, 207, 152, 1);
+    background-color:transparent;
+}
+.accordion-body {
+    color: rgba(229, 229,229, 1)
+
+}
+.grid-container {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .grid-item {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(229 229 229 / 18%);
+  }
+  .grid-item:hover {
+    border: 1px solid rgba(229, 229, 229, 0.905);
+  }
+  .grid-item.large {
+    grid-column: span 2; /* Span 2 columns */
+    grid-row: span 2; /* Span 2 rows */
+    border: 1px solid rgb(229 229 229 / 18%);
+  }
+  .grid-item.large:hover {
+    border: 1px solid rgba(229, 229, 229, 0.905);
+  }
+  .grid-item h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: left;
+  }
+  .card-home-grid{
+    display: flex;
+    gap: 16px;
+  }
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .buttons-home{
+       flex-direction: column;
+       align-items: center;
+       width: 80%;
+    }
+
+    button.btn.btn-primary {
+        width: 100%;
+    }
+    .card-home {
+flex-direction: column;
+  }
+  .card-home img{
+    width: 100%;
+  }
+.home-container p{
+    width: 100%;
+   padding: 2rem;
+    }
+.form-home{
+    flex-direction: column;
+}
+.wailist-input{
+    width: 100%;
+}
+.form-home button {
+    width: 100%;
+    padding: 10px 24px;
+}
+.accordion {
+    width: 100%;
+}
+
+}
+@media (max-width: 768px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-home-grid{
+        flex-direction: column;
+    }
+}

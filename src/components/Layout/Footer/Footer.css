@@ -1,0 +1,50 @@
+.footer {
+    background: rgba(22, 22, 22, 1);    
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.nav-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.socialMedia a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.socialMedia a:hover {
+    color: #61dafb;
+}
+
+.copy {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
