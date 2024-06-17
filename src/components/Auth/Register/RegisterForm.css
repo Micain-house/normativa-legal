@@ -87,3 +87,12 @@
   .error{
     color: red;
   }
+  .success{
+    color:#186862;
+  }
+  .link-form{
+    color: black;
+  }
+  .link-form a{
+    color: #186862;
+  }

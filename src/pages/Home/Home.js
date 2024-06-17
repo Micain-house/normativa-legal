@@ -3,18 +3,27 @@ import './Home.css'
 import Button from 'react-bootstrap/Button';
 import cardHome from '../../assets/img-blog2.webp'
 import Accordion from 'react-bootstrap/Accordion';
-
+import { Helmet } from 'react-helmet';
+import microPanel from '../../components/Layout/MicroPanel/microPanel'
+import Dropdown from '../../components/Layout/DropDown/dropdown';
 
 const Home = () => {
   return (
     <>
     <div className='home'>
+    <Helmet>
+        <title>Inicio - Mi Aplicación</title>
+        <meta name="description" content="Página de inicio de mi aplicación." />
+      </Helmet>
       <div className='home-container'>
+        {/* <microPanel/>
+        <Dropdown/> */}
      <h1>LOREM IMPSUM LOREM IMPSUM <span>LOREM IMPSUM</span></h1>
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
        <form className='form-home'>
-       <input type="email" placeholder="Email address" name="email" id="email" className='wailist-input'/> 
-        <button value="subtmit" className='button-primary-global'>Join wailist</button>
+       
+       {/* <input type="email" placeholder="Email address" name="email" id="email" className='wailist-input'/> 
+        <button value="subtmit" className='button-primary-global'>Join wailist</button> */}
        </form>
        <div className="grid-container">
       <div className="grid-item large">

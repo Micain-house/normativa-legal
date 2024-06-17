@@ -5,11 +5,16 @@ import SearchBar from '../../components/SearchBar/SearchBar'
 import './Blog.css'
 import imgBlog from '../../assets/img-blog.webp'
 import imgBlog2 from '../../assets/img-blog2.webp'
+import { Helmet } from 'react-helmet';
 
 const Blog =()=> {
   return (
     <>
     <div className='blog'>
+    <Helmet>
+        <title>Acerca de - Mi Aplicación</title>
+        <meta name="description" content="Más información sobre mi aplicación." />
+      </Helmet>
         <section className='blog-header'>
         <div className='blog-header-img'>
                 <img src={imgBlog2} alt='img-blog' width="500px"/>

@@ -1,0 +1,13 @@
+.panel-container{
+    width: 400px;
+    height: 60px;
+}
+.btn-panel{
+    background: #454545   
+}
+.btn-panel-default{
+    background-color: #e84545;
+}
+.btn-panel:active{
+    background: red!important;
+}
