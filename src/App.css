@@ -5,46 +5,63 @@
 
 /* global.css */
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgba(229, 229,229, 1);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: rgba(28, 28, 28, 1);
+  background:white;
 }
 label{
-  font-family: "Barlow", sans-serif;
-  color: rgba(229, 229,229, 1)
+  font-family: "Roboto", sans-serif;
+  color: rgba(37, 37, 37, 1);
+  font-size: 14px;
+  line-height: 20px;
 }
 input{
-  font-family: "Barlow", sans-serif;
+  font-family: "Roboto", sans-serif;
 
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Barlow", sans-serif;
-  font-weight: bold;
-  color: rgba(62, 207,152, 1);
+  font-family: "Roboto", sans-serif;
+  color: rgba(37, 37, 37, 1);
+  font-weight: 500;
+}
+h1{
+  font-size: 56px;
+  line-height: 64px;
+}
+h2{
+  font-size: 32px;
+  line-height: 40px;
+}
+h3{
+  font-size: 24px;
+  line-height: 32px;
+}
+h4{
+  font-size: 18px;
+  line-height: 24px;
 }
 span{
-  color: rgba(229, 229,229, 1)
-}
-h1 {
-  font-size: 2em; /* Tamaño específico para h1 */
+  color: rgba(69, 69, 69, 1);
+  font-size: 1em; 
+  font-weight: 400;
 }
 
 p {
-  font-size: 1em; /* Tamaño para párrafos */
-  line-height: 1.5;
-  font-family: "Barlow", sans-serif;
+  font-size: 16px; 
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color:rgba(229, 229,229, 1)
+  color:rgba(37, 37, 37, 1);
 
 }
 
 a {
-  color:rgba(229, 229,229, 1);
+  color: rgba(37, 37, 37, 1);
   text-decoration: none;
-  font-family: "Barlow", sans-serif;
+  font-family: "Roboto", sans-serif;
 
 }
 .button-primary-global {
@@ -82,3 +99,6 @@ button.button-secondary-global.active.btn.btn-primary {
 /* a:hover {
   color:#186862;
 } */
+@media (max-width: 768px) {
+
+}

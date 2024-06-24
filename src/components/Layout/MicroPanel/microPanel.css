@@ -1,6 +1,8 @@
-.panel-container{
-    width: 400px;
-    height: 60px;
+.panel-container {
+    /* position: absolute; */
+    padding: 10px;
+    position: sticky;
+    z-index: 1000;
 }
 .btn-panel{
     background: #454545   

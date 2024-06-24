@@ -1,14 +1,6 @@
 .header{
-    border-bottom: 0.2px solid rgb(229 229 229 / 18%);
-    background: rgba(28, 28, 28, 1);
-    ;
-    /* display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
-    align-content: center;
-    align-items: center; */
+    border-bottom: 0.2px solid rgba(231, 231, 231, 1);
 }
-
 @media (max-width: 1000px) {
     .header{
        /* height: 200px; */

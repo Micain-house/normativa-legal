@@ -1,5 +1,14 @@
+.search{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 142px;
+
+}
 .search-container{
   padding: 8px 8px 8px 14px;
+  width: 80%;
   border-radius: 6px;
   border: 1px solid rgba(231, 231, 231, 1);
   display: flex;
@@ -9,27 +18,106 @@
   background: white;
   gap: 8px;
 }
+.search-container:focus-within{
+  border: 1px solid rgba(232, 69, 69, 1);
+}
+.search-container:active{
+  border: 1px solid rgba(232, 69, 69, 1);
+}
+
 .input-container{
   display: flex;
   flex-direction: row;
   width: 100%;
+  gap: 8px;
+  outline: none;
+  justify-content: space-between;
 }
+
 .search-input{
   width: 90%;
   border: none;
+  color: rgba(69, 69, 69, 1);
 }
+.search-input:focus{
+  outline: none;
+  }
 .btn-input-search{
   padding: 8px 16px 8px 16px;
   background: rgba(232, 69, 69, 1);
   border: 1px solid rgba(232, 69, 69, 1);
   border-radius: 4px;
   color: white;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
-.resultados-container{
-  background: black;
+.btn-input-search:hover{
+  background: rgba(243, 118, 118, 1);
+}
+
+
+.container-results{
+  background: rgba(246, 246, 246, 1);
   height: 400px;
   overflow-y: auto;
+}
+.container-results ul{
+  padding: 16px;
+}
+.container-results p {
+  color:rgba(69, 69, 69, 1)
+}
+.law-results{
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  box-shadow: 0px 4px 16px 0px rgba(69, 69, 69, 0.16);
+  border-radius: 6px;
+}
+.law-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.law-title{
+  color: rgba(232, 69, 69, 1) !important;
+  font-weight: 500;
+  margin: 0;
+}
+.law-organism{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.law-organism p{
+  margin: 0;
+  padding: 4px 8px 4px 8px;
+  background:rgba(254, 242, 242, 1);
+  border-radius: 4px;
+}
+.delete-icon{
+  cursor: pointer;
+}
+/* Barra Scroll */
+::-webkit-scrollbar {
+  width: 10px; 
+  border-radius: 12px !important;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #DCDCDC ; 
+  border-radius: 8px !important; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.loading-message{
+  color:rgba(232, 69, 69, 1);
+  align-items: center;
+  display: flex;
+  gap: 4px;
 }
   @media (max-width: 600px) {
     .search-container {

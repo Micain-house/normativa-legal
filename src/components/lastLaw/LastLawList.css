@@ -1,0 +1,50 @@
+.slider-container{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    }
+    .slider-container h2{
+      text-align: left;
+    }
+  /* 
+    .title-lastProject {
+      font-size: 16px;
+      margin-bottom: 10px;
+    } */
+    .last-project-list {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    .last-law {
+      background-color: white;
+      border: 1px solid rgba(231, 231, 231, 1);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 250px;
+      width: 90% !important;
+      text-align: left;
+    }
+    .law-last-title{
+        text-transform:capitalize;
+    }
+    .slick-arrow.slick-next {
+        background: white  !important;
+    }
+    .slick-arrow.slick-prev {
+        background: white  !important;
+    }
+    .slick-next.slick-disabled:before {
+        color: black !important;
+        opacity: 100 !important;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        color: black !important;
+        opacity: 100 !important;
+    }

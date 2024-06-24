@@ -1,0 +1,45 @@
+ .norma{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+.norma-content{
+    width: 868px;
+    margin-top: 24px;
+}
+.articulo-container.highlight {
+    background-color: rgba(254, 242, 242, 1);
+  }
+.header-norma{
+    background-color: rgba(246, 246, 246, 1);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+}
+.titulo-container{
+    margin-bottom: 32px;
+}
+.article-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: flex-end;
+}
+.articulo-container{
+    width: 100%;
+} 
+.organismos-container{
+    display: flex;
+}
+.organismo-norma{  
+    margin: 0;
+    padding: 4px 8px 4px 8px;
+    background: rgba(254, 242, 242, 1);
+    border-radius: 4px;
+    
+}
