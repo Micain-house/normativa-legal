@@ -8,11 +8,11 @@
   .slider-container h2{
     text-align: left;
   }
-/* 
+
   .title-lastProject {
-    font-size: 16px;
-    margin-bottom: 10px;
-  } */
+    border-top: 1px solid #E7E7E7;
+    margin-top: 16px;
+  }
   .last-project-list {
     display: grid;
     grid-template-columns: repeat(5, minmax(200px, 1fr));
@@ -25,8 +25,30 @@
     border: 1px solid rgba(231, 231, 231, 1);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 250px;
+    height: 290px;
     width: 90% !important;
     text-align: left;
   }
+  .footer-lastProject{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .footer-lastProject span{
+    padding: 4px 8px 4px 8px;
+    background: #FEF2F2;
+    border-radius: 4px;
+  }
+
+
+  @media (max-width: 768px) {
+    .slider-title {
+      width: 100%;
+  }
+  .container-results{
+    width: 100%;
+  }
+  
+  
+  }
+  

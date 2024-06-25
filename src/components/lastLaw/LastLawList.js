@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { lastLaw } from '../../services/lastLaw';
+import iconLastLaw from '../../assets/btn-lastlaw.svg'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './LastLawList.css';
@@ -90,10 +91,16 @@ const LastLawList = () => {
       }
     ]
   };
-
+  const toCapitalize = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  };
+  
   return (
     <div className="slider-container">
+      <div className='slider-title'>
       <h2>Últimas leyes publicadas</h2>
+      <p>Mantente al día con las normativas más recientes en Chile. Nuestra plataforma te ofrece acceso rápido a las últimas leyes publicadas.</p>
+      </div>
       {error && <p>Error: {error}</p>}
       <Slider {...settings}>
         {data.length > 0 ? (
@@ -101,11 +108,13 @@ const LastLawList = () => {
             <div className="last-law" key={index}>
               <h4>{item.tipos_numeros.tipo_numero.compuesto}</h4>
               <p className="law-last-title">
-                {item.titulo.length > 100 ? 
-                  `${item.titulo.substring(0, 100)}...` : 
-                  item.titulo}
-              </p>
-              <p>{formatDate(item.fecha_publicacion)}</p> 
+              {item.titulo.length > 100 ? 
+                `${toCapitalize(item.titulo.substring(0, 100))}...` : 
+                toCapitalize(item.titulo)}
+            </p>
+
+              <p className='date-lastLaw'>{formatDate(item.fecha_publicacion)}
+                <button className='btn-arrow-last'><img src={iconLastLaw} alt="icon-lastlaw" /></button> </p> 
             </div>
           ))
         ) : (

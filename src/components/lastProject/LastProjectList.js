@@ -93,19 +93,27 @@ const LastProjectList = () => {
 
   return (
     <div className="slider-container">
+      <div className='slider-title'>
       <h2>Últimos proyectos publicados</h2>
+      <p>Infórmate sobre los proyectos de ley más recientes en Chile. Nuestra plataforma te permite acceder rápidamente a las propuestas legislativas en curso, con herramientas de IA que facilitan su análisis y comprensión.</p>
+      </div>
       {error && <p>Error: {error}</p>}
       <Slider {...settings}>
         {data.length > 0 ? (
           data.map((item, index) => (
             <div className="last-project" key={index}>
-              <h4 className="title-nroProject">Proyecto {item.NroBoletin}</h4>
+              <h4 className="title-nroProject">Nro boletín: {item.NroBoletin}</h4>
               <p className="title-lastProject">
                 {item.TituloProyecto.length > 100 ? 
                   `${item.TituloProyecto.substring(0, 100)}...` : 
                   item.TituloProyecto}
               </p>
-              <p className="title-dateProject">{formatDate(item.FechaDespacho)}</p>
+              <div className='footer-lastProject'>
+              <span>Origen: {item.Origen}</span>
+              <span>Despacho: {formatDate(item.FechaDespacho)}</span>
+              {/* <p className="title-dateProject">Despacho: {formatDate(item.FechaDespacho)}</p> */}
+              </div>
+              
             </div>
           ))
         ) : (

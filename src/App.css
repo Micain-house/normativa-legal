@@ -5,7 +5,6 @@
 
 /* global.css */
 body {
-  font-family: "Roboto", sans-serif;
   color: rgba(229, 229,229, 1);
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ body {
   background:white;
 }
 label{
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: rgba(37, 37, 37, 1);
   font-size: 14px;
   line-height: 20px;
@@ -23,7 +22,7 @@ input{
 
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Serif", serif;
   color: rgba(37, 37, 37, 1);
   font-weight: 500;
 }
@@ -42,17 +41,25 @@ h3{
 h4{
   font-size: 18px;
   line-height: 24px;
+  color: #E84545;
 }
 span{
   color: rgba(69, 69, 69, 1);
   font-size: 1em; 
   font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
 }
-
+::placeholder{
+  color:#B0B0B0;
+  font-size: 16px; 
+  line-height: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+}
 p {
   font-size: 16px; 
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   color:rgba(37, 37, 37, 1);
 

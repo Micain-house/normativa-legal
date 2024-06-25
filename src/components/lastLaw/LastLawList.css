@@ -8,11 +8,10 @@
     .slider-container h2{
       text-align: left;
     }
-  /* 
-    .title-lastProject {
-      font-size: 16px;
-      margin-bottom: 10px;
-    } */
+  .slider-title{
+    margin-left: 24px;
+    width: 66%;
+}
     .last-project-list {
       display: grid;
       grid-template-columns: repeat(5, minmax(200px, 1fr));
@@ -25,13 +24,33 @@
       border: 1px solid rgba(231, 231, 231, 1);
       padding: 20px;
       border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      height: 250px;
+      height: 186px;
       width: 90% !important;
       text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+    .last-law h4{
+      margin: 0;
+      margin-bottom: 4px;
     }
     .law-last-title{
-        text-transform:capitalize;
+      padding: 0 !important;
+      margin: 0  !important;
+      margin-bottom: 16px !important;
+    }
+    .law-last-title p{
+      padding: 0;
+    }
+    .date-lastLaw{
+      display: flex ;
+      justify-content: space-between;
+      margin-right: 0 !important ;
+      padding: 0 !important;
+      margin-bottom: 0;
+      cursor: pointer;
     }
     .slick-arrow.slick-next {
         background: white  !important;
@@ -43,7 +62,22 @@
         color: black !important;
         opacity: 100 !important;
     }
+    .btn-arrow-last{
+      height: 32px;
+      width: 32px;
+      border-radius: 6px;
+      border: 1px solid #E7E7E7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
 
+.btn-arrow-last:hover{
+      background-color: #E7E7E7;
+
+    }
     .slick-prev:before, .slick-next:before {
         color: black !important;
         opacity: 100 !important;

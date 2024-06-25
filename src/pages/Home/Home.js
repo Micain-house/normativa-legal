@@ -13,13 +13,17 @@ const Home = () => {
     <>
     <div className='home'>
     <Helmet>
-        <title>Inicio - Mi Aplicación</title>
+        <title>Inicio</title>
         <meta name="description" content="Página de inicio de mi aplicación." />
       </Helmet>
       <div className='home-container'>
+        <div className='home-title'>
+        <h1>Buscador de Normativas Legales del Diario Oficial de Chile</h1>
+        <p>Nuestra plataforma te brinda el acceso más directo y eficiente a las normativas legales publicadas en el Diario Oficial de Chile. Utiliza nuestro buscador para explorar, encontrar y entender las leyes y regulaciones que impactan tu vida o negocio.</p>
+      </div>
       <SearchBar/>
-      <LastProjectList/>
       <LastLawList/>
+      <LastProjectList/>
        <form className='form-home'>
        
        {/* <input type="email" placeholder="Email address" name="email" id="email" className='wailist-input'/> 
