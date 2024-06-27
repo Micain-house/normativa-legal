@@ -1,5 +1,9 @@
 .header{
     border-bottom: 0.2px solid rgba(231, 231, 231, 1);
+    border-bottom: 0.2px solid rgba(231, 231, 231, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 @media (max-width: 1000px) {
     .header{

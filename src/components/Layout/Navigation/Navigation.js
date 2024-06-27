@@ -20,6 +20,9 @@ export const Navigation = () => {
       <ul className={menuOpen ? "open" : ""}>
         <div className="seccion-uno-nav">
         <li>
+          <NavLink to="/" onClick={handleLinkClick}>Inicio</NavLink>
+        </li>
+        <li>
           <NavLink to="/regulado" onClick={handleLinkClick}>Regulado</NavLink>
         </li>
         <li>

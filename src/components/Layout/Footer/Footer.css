@@ -1,50 +1,88 @@
 .footer {
-    background: rgba(22, 22, 22, 1);    
-    padding: 20px 0;
+    background: rgba(246, 246, 246, 1);
+    padding: 40px 140px 24px 140px;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-.footer-container {
+    height: 308px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 80px;
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+}
+.logo span{
+    text-align: left;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    width: 50%;
+}
+.footer-enlaces p{
+    font-weight: 500;
+}
+.enlaces-uno,
+.enlaces-dos,
+.enlaces-tres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .logo img {
     width: 40px;
     margin-bottom: 20px;
 }
-
-.nav-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
+.footer-footer{
+    border-top: 1px solid rgba(231, 231, 231, 1);
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    padding: 16px 0px 0px 0px;
+}
+.politicas{
+    display: flex;
+    gap: 40px;
+}
+.copyright span {
+    color: rgba(136, 136, 136, 1);
+}
+.politicas a {
+    color: rgba(136, 136, 136, 1);
 }
 
-.nav-footer a {
-    text-decoration: none;
-    transition: color 0.3s;
+@media (max-width: 768px) {
+.footer{
+    padding: 40px 16px 24px 16px;
+    height: 100%;
+    margin-left: 24px;
 }
-
-
-.socialMedia a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
+.footer-footer {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
 }
-
-.socialMedia a:hover {
-    color: #61dafb;
+.logo{
+    width: 100%;
 }
-
-.copy {
-    margin-top: 20px;
-    font-size: 0.9em;
+.footer-container{
+    flex-direction: column;
+}
+.footer-enlaces{
+    width: 100%;
+    gap: 16px;
+    justify-content: flex-start;
+}
 }

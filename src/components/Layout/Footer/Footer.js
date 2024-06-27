@@ -7,26 +7,38 @@ const Footer = () => {
         <footer className='footer'>
             <div className='footer-container'>
                 <div className='logo'>
-                    {/* Aquí puedes colocar el logo de tu aplicación */}
                     <img src={logo} alt="Logo" />
+                    <span>Normativa Legal facilita el acceso y comprensión de las leyes chilenas usando IA. Utiliza nuestro buscador, filtra artículos por perfiles y conecta con especialistas según tus requerimientos. Mantente al día con las últimas normativas y proyectos de ley.</span>
                 </div>
-                {/* <nav className='nav-footer'>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#/about">About</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/pricing">Pricing</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </nav> */}
-                <div className='socialMedia'>
-                    {/* Enlaces a redes sociales */}
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <div className='footer-enlaces'>
+                    <div className='enlaces-uno'>
+                        <p>Enlace</p>
+                      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                    <div className='enlaces-dos'>
+                    <p>Enlace</p>
+                      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                    <div className='enlaces-tres'>
+                    <p>Enlace</p>
+                      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </div>
+                  
                 </div>
-                <div className='copy'>
-                    &copy; 2024 Tu Empresa. Todos los derechos reservados.
+            </div>
+            <div className='footer-footer'>
+                <div className='copyright'>
+                  <span>© 2024 Normativa Legal. Derechos reservados</span>
+                </div>
+                <div className='politicas'>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Política de privacidad</a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Términos de servicio</a>
                 </div>
             </div>
         </footer>

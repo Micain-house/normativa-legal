@@ -7,6 +7,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import { Helmet } from 'react-helmet';
 import LastProjectList from '../../components/lastProject/LastProjectList';
 import LastLawList from '../../components/lastLaw/LastLawList';
+import iconFile from '../../assets/icon-file-home.svg'
+import cardFiltro from '../../assets/cardFiltro-home.png'
 
 const Home = () => {
   return (
@@ -18,117 +20,64 @@ const Home = () => {
       </Helmet>
       <div className='home-container'>
         <div className='home-title'>
-        <h1>Buscador de Normativas Legales del Diario Oficial de Chile</h1>
-        <p>Nuestra plataforma te brinda el acceso más directo y eficiente a las normativas legales publicadas en el Diario Oficial de Chile. Utiliza nuestro buscador para explorar, encontrar y entender las leyes y regulaciones que impactan tu vida o negocio.</p>
+        <h1>Encuentra y comprende las Normativas Legales chilenas con IA</h1>
+        <p>Bienvenido a Normativa Legal, tu fuente confiable de leyes chilenas actualizadas y herramientas avanzadas de Inteligencia Artificial para su comprensión.</p>
       </div>
       <SearchBar/>
+
+     <section>
+      <div className='title-cards'>
+        <h2>Filtra artículos e interactúa con IA</h2>
+        <p>Nuestra IA desglosa y filtra artículos según perfiles y requerimientos normativos. Independientemente de tu área o sector, nuestra plataforma te ayuda a encontrar lo que necesitas. Además, ofrece explicaciones en simple y respuestas a tus preguntas en tiempo real.</p>
+      </div>
+      <div className='cards'>
+        <div className='card-left'>
+          <div className='title-card'>
+         <span> <img src={iconFile} alt='img-card'/> Nuestra IA identifica los actores de la normativa en los artículos</span>
+         <h3>Filtra los artículos por perfil y requisito</h3>
+        </div>
+          <div className='img-card'>
+            <img src={cardFiltro} alt='img-card'/>
+          </div>
+      </div>
+      <div className='card-rigth'>
+          <div className='title-card'>
+          <span> <img src={iconFile} alt='img-card'/>La IA Normativa te explica y responde dudas de los artículos</span>
+          <h3>Interactúa con artículos de tu interés</h3>
+        </div>
+      </div>
+
+      </div>
+     </section>
       <LastLawList/>
+      <section>
+        <div className='cards-especialistas'>
+        <div className='card-especialista-left'>
+          <div className='title-card-especialista-left'>
+         <span> <img src={iconFile} alt='img-card'/>Un directorio de profesionales a tu completa disposición</span>
+         <h3>Conecta con especialistas en tu necesidad</h3>
+        </div>
+      </div>
+      <div className='card-especialista-rigth'>
+          <div className='title-card-especialista-right'>
+          <h3>Especialistas en ley Chile</h3>
+          <span> Identificamos perfiles normativos y te conectamos con especialistas en el área. Normativa Legal facilita la conexión para cumplir con tus requerimientos normativos en todos los rubros.</span>
+        </div>
+        </div>
+        </div>
+       </section>
       <LastProjectList/>
-       <form className='form-home'>
-       
-       {/* <input type="email" placeholder="Email address" name="email" id="email" className='wailist-input'/> 
-        <button value="subtmit" className='button-primary-global'>Join wailist</button> */}
-       </form>
-       <section>
-        <div className='preguntas-frecuentes'>
-          <h4>PREGUNTAS FRECUENTES</h4>
-        <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Question</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Question </Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>Question</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>Question</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>Question</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="5">
-        <Accordion.Header>Question</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-
-        </div>
-       </section>
-       <section>
-        <div className='card-home'>
-          <div className='card-home-text'>
-         <h3>An AI tool made to enhance designers.</h3>
-         <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"</p>
-         </div>
-         <div className='card-home-grid'>
-         <div className="grid-item">
-        <h2>Authentication</h2>
-        <p>Add user sign ups and logins, securing your data with Row Level Security.</p>
-      </div>
-      <div className="grid-item">
-        <h2>Edge Functions</h2>
-        <p>Easily write custom code without deploying or scaling servers.</p>
-      </div>
-         </div>
-        </div>
-       </section>
-
      </div>
+
+      <div className='banner'>
+        <div className='banner-content'>
+          <h2>Optimiza tu acceso y entendimiento de las normativas con nuestra plataforma</h2>
+          <p>Únete a Normativa Legal hoy y simplifica tu acceso y comprensión de las leyes chilenas. Con nuestra IA y conexión con especialistas, estar al tanto de las normativas nunca ha sido tan fácil</p>
+          <a href=''> <button className='btn-register-home'>Registrarse ahora</button></a>
+        
+        </div>
+      </div>
+
     
     </div>
 

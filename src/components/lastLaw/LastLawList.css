@@ -9,7 +9,7 @@
       text-align: left;
     }
   .slider-title{
-    margin-left: 24px;
+    /* margin-left: 24px; */
     width: 66%;
 }
     .last-project-list {
@@ -18,13 +18,55 @@
       gap: 20px;
       padding: 20px;
     }
+    .slick-prev:before, .slick-next:before {
+      content: '';
+      display: block;
+      width: 30px; 
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    .slick-prev {
+      left: -35px; 
+    }
+    
+    .slick-next {
+      right: -35px; 
+    }
+    .slick-arrow.slick-next,
+    .slick-prev{
+      display: block;
+      background: black;
+      width: 30px;
+      height: 30px;
+      border: 1px solid rgba(231, 231, 231, 1);
+      border-radius: 96%;
+    }
+    
+    .slick-prev:before {
+      background-image: url('../../assets/arrow-left.svg'); 
+      
+    }
+    .slick-prev:before,
+    .slick-next:before{
+      content: '';
+      display: block;
+      height: 30px;
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .slick-next:before {
+      background-image: url('../../assets/arrow-right.svg'); 
+    }
     
     .last-law {
       background-color: white;
       border: 1px solid rgba(231, 231, 231, 1);
       padding: 20px;
       border-radius: 5px;
-      height: 186px;
+      /* height: 186px; */
       width: 90% !important;
       text-align: left;
       display: flex;
@@ -54,10 +96,20 @@
     }
     .slick-arrow.slick-next {
         background: white  !important;
+        transition: background 0.3s ease, border-color 0.3s ease;
     }
+    .slick-arrow.slick-next:hover{
+      background:#E7E7E7 !important;
+  }
+  
     .slick-arrow.slick-prev {
         background: white  !important;
+        transition: background 0.3s ease, border-color 0.3s ease;
     }
+    .slick-arrow.slick-prev:hover{
+      background:#E7E7E7 !important;
+  }
+  
     .slick-next.slick-disabled:before {
         color: black !important;
         opacity: 100 !important;
@@ -76,9 +128,31 @@
 
 .btn-arrow-last:hover{
       background-color: #E7E7E7;
-
-    }
+}
     .slick-prev:before, .slick-next:before {
         color: black !important;
         opacity: 100 !important;
     }
+
+
+    @media (max-width: 768px) {
+      .slider-title {
+        width: 100%;
+    }
+    .slider-container{
+      margin-top: 40px;
+    }
+      .cards-especialistas {
+        flex-direction: column-reverse;
+    }
+    .card-especialista-left {
+    width: 100%;
+    }
+    .title-card-especialista-right span{
+      text-align: left;
+    }
+    .title-card-especialista-left h3{
+      text-align: left;
+    }
+
+  }

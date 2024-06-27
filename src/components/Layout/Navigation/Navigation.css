@@ -1,18 +1,19 @@
 .active {
-  color: rgba(62, 207,152, 1);
+  color:rgba(232, 69, 69, 1);
   font-weight: 500;
 }
 
 nav {
   display: flex;
+  width: 80%;
   align-items: center;
   background: #ffff;
   color: black;
   position: sticky;
   top: 0;
   z-index: 10;
-  margin-right: 120px;
-  margin-left: 120px;
+  /* margin-right: 120px; */
+  /* margin-left: 120px; */
   /* width: 100%; */
   justify-content: space-between;
 }
@@ -132,5 +133,16 @@ background: rgba(243, 118, 118, 1);
 .seccion-dos-nav{
   display: flex;
   flex-direction: column;
+}
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+.nav{
+  margin-left: 0 !important;
+  width: 100%;
+}
+  nav ul {
+    justify-content: space-between;
+    width: 80%;
 }
 }
