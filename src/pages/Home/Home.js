@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
     <div className='home'>
-    <Helmet>
+      <Helmet>
         <title>Inicio</title>
         <meta name="description" content="Página de inicio de mi aplicación." />
       </Helmet>

@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/about" element={<About />} /> */}
           {/* <Route path="/contact" element={<Contact />} /> */}
-          <Route path="/normativa/norm-content/:idNorma" element={<NormContentPage />} />
+          <Route path="/Chile/:idNorma" element={<NormContentPage />} />
           {/* <Route path="/services" element={<Services />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/blog" element={<Blog />} /> */}

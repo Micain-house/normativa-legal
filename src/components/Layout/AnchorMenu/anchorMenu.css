@@ -1,0 +1,16 @@
+.anchor-menu {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    width: 40%;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+.anchor-menu ul {
+    position: fixed;
+    height: 780px;
+    overflow: auto;
+}
+.anchor-menu li.active a {
+    color: rgba(232, 69, 69, 1);
+  }  

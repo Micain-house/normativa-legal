@@ -129,7 +129,7 @@ const SearchBar = () => {
   };
 
   const handleSelect = (idNorma) => {
-    window.open(`/normativa/norm-content/${idNorma}`, '_blank');
+    window.open(`/Chile/${idNorma}`, '_blank');
   };
   const toCapitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();

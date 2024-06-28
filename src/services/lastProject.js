@@ -3,7 +3,7 @@ import axios from 'axios';
 const token = process.env.REACT_APP_USER_CREATE_TOKEN;
 
 export const lastProject = async () => {
-  const url = `/normativa/last-project/5`;
+  const url = `/Chile/last-project/5`;
 
   const config = {
     method: 'get',

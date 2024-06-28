@@ -1,8 +1,9 @@
- .norma{
+.norma{
     display: flex;
     background-color: white;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 .norma-title {
     margin-top: 80px;
@@ -12,6 +13,10 @@
     margin-top: 40px;
     margin-bottom: 80px;
     text-align: justify;
+    border: 1px solid #E7E7E7;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
 }
 .articulo-container.highlight {
     background-color: rgba(254, 242, 242, 1);
@@ -58,6 +63,16 @@
 .titulo-container h3{
   color:  #E84545
 }
+.body-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 100px;
+}
+.norma-container{
+    width: 86%;
+}
+
 @media (max-width: 768px) {
 
     .header-norma{
